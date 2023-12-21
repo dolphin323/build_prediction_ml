@@ -1,0 +1,2507 @@
+[
+  {
+    "id": "openstack%2Fironic~master~Ife8387a3bdb75717b896cf1067d2490084665e49",
+    "project": "openstack/ironic",
+    "branch": "master",
+    "topic": "redfish_pxe_nic_support",
+    "hashtags": ["ironic-week-prio"],
+    "change_id": "Ife8387a3bdb75717b896cf1067d2490084665e49",
+    "subject": "DRAC : idrac-redfish inspect updates pxe port",
+    "status": "MERGED",
+    "created": "2019-11-07 09:52:03.000000000",
+    "updated": "2021-03-29 10:09:50.000000000",
+    "submitted": "2021-03-29 10:07:21.000000000",
+    "submitter": {
+      "_account_id": 22348,
+      "name": "Zuul",
+      "username": "zuul",
+      "tags": ["SERVICE_USER"]
+    },
+    "insertions": 433,
+    "deletions": 7,
+    "total_comment_count": 279,
+    "unresolved_comment_count": 20,
+    "has_review_started": true,
+    "submission_id": "693328-redfish_pxe_nic_support",
+    "meta_rev_id": "df398d33c9450b1bd3c310d168ad0800c9b3a167",
+    "_number": 693328,
+    "owner": {
+      "_account_id": 29834,
+      "name": "Pradip Kadam",
+      "email": "pradip.kadam001@gmail.com",
+      "username": "pradip.kadam001"
+    },
+    "current_revision": "7d82d7f3dd12d5b2227cd2dd7ee886d5f689fdad",
+    "revisions": {
+      "59fe564349f72e51b15017195ffddbec3eedc913": {
+        "kind": "REWORK",
+        "_number": 1,
+        "created": "2019-11-07 09:52:03.000000000",
+        "uploader": {
+          "_account_id": 29834,
+          "name": "Pradip Kadam",
+          "email": "pradip.kadam001@gmail.com",
+          "username": "pradip.kadam001"
+        },
+        "ref": "refs/changes/28/693328/1",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/1",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/1 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/1 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/1 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/1"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 166,
+            "lines_deleted": 7,
+            "size_delta": 6781,
+            "size": 16742
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 175,
+            "size_delta": 8592,
+            "size": 26268
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 8,
+            "size_delta": 289,
+            "size": 289
+          }
+        }
+      },
+      "5777e763bf329b1a7daf5174030f53157b509f2d": {
+        "kind": "REWORK",
+        "_number": 2,
+        "created": "2019-11-19 08:48:10.000000000",
+        "uploader": {
+          "_account_id": 29834,
+          "name": "Pradip Kadam",
+          "email": "pradip.kadam001@gmail.com",
+          "username": "pradip.kadam001"
+        },
+        "ref": "refs/changes/28/693328/2",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/2",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/2 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/2 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/2 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/2"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 174,
+            "lines_deleted": 7,
+            "size_delta": 7166,
+            "size": 17127
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 187,
+            "size_delta": 9139,
+            "size": 26815
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 232,
+            "size": 232
+          }
+        }
+      },
+      "180c0cf374d7bbfce19d0de23a92ee0efb444893": {
+        "kind": "REWORK",
+        "_number": 3,
+        "created": "2019-12-10 09:20:53.000000000",
+        "uploader": {
+          "_account_id": 29834,
+          "name": "Pradip Kadam",
+          "email": "pradip.kadam001@gmail.com",
+          "username": "pradip.kadam001"
+        },
+        "ref": "refs/changes/28/693328/3",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/3",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/3 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/3 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/3 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/3"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 174,
+            "lines_deleted": 7,
+            "size_delta": 7166,
+            "size": 17127
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 185,
+            "size_delta": 9083,
+            "size": 26759
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 232,
+            "size": 232
+          }
+        }
+      },
+      "99de298a110afc85b9e02e0c80b93af63e8ce017": {
+        "kind": "REWORK",
+        "_number": 4,
+        "created": "2020-03-16 13:13:18.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/4",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/4",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/4 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/4 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/4 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/4"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 128,
+            "lines_deleted": 7,
+            "size_delta": 5405,
+            "size": 15366
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8744,
+            "size": 26420
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "bac793d2ec7784d4bdc49dd20221e6d978bbf9c8": {
+        "kind": "REWORK",
+        "_number": 5,
+        "created": "2020-03-17 09:39:30.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/5",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/5",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/5 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/5 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/5 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/5"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 140,
+            "lines_deleted": 7,
+            "size_delta": 6159,
+            "size": 16120
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8744,
+            "size": 26420
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "ef21d55835fec24b8ea8f334fdf5a519cfac2fc1": {
+        "kind": "REWORK",
+        "_number": 6,
+        "created": "2020-03-18 06:30:55.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/6",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/6",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/6 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/6 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/6 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/6"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 140,
+            "lines_deleted": 7,
+            "size_delta": 6162,
+            "size": 16123
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8744,
+            "size": 26420
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "fa51fcc92433b5b6c8c1a30b208ed23707dd9dfd": {
+        "kind": "NO_CODE_CHANGE",
+        "_number": 7,
+        "created": "2020-03-24 06:39:14.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/7",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/7",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/7 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/7 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/7 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/7"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 140,
+            "lines_deleted": 7,
+            "size_delta": 6162,
+            "size": 16123
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8744,
+            "size": 26420
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "b62b7bcd34c905e82d1cf488597a1828c4dfb3a8": {
+        "kind": "REWORK",
+        "_number": 8,
+        "created": "2020-04-06 16:06:19.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/8",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/8",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/8 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/8 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/8 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/8"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 150,
+            "lines_deleted": 7,
+            "size_delta": 6705,
+            "size": 16666
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 177,
+            "size_delta": 8346,
+            "size": 26022
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "04020ecfce244885bd81f3549189d1caf8140ec7": {
+        "kind": "REWORK",
+        "_number": 9,
+        "created": "2020-04-13 14:39:42.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/9",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/9",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/9 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/9 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/9 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/9"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 150,
+            "lines_deleted": 7,
+            "size_delta": 6706,
+            "size": 16667
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8973,
+            "size": 26649
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 11,
+            "size": 789
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "72dd0288953f4803a8e583870f5c24f43b540191": {
+        "kind": "REWORK",
+        "_number": 10,
+        "created": "2020-04-14 09:32:22.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/10",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/10",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/10 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/10 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/10 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/10"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 149,
+            "lines_deleted": 7,
+            "size_delta": 6705,
+            "size": 16666
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8973,
+            "size": 26649
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 802
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 1515
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "8853f1e4aaa97b939e43cc25eaac203fb57332db": {
+        "kind": "REWORK",
+        "_number": 11,
+        "created": "2020-04-15 08:23:28.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/11",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/11",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/11 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/11 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/11 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/11"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1820
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 149,
+            "lines_deleted": 7,
+            "size_delta": 6705,
+            "size": 16666
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8973,
+            "size": 26649
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 802
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 1515
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "f92f7e00fbff2d468d8d01f1c6b79834993cd254": {
+        "kind": "REWORK",
+        "_number": 12,
+        "created": "2020-04-21 11:17:59.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/12",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/12",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/12 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/12 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/12 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/12"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1820
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 147,
+            "lines_deleted": 7,
+            "size_delta": 6571,
+            "size": 16532
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8973,
+            "size": 26649
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 802
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 1515
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "118d198162e32ef8d0b415992cd7d79e5b449fcd": {
+        "kind": "REWORK",
+        "_number": 13,
+        "created": "2020-04-22 12:38:12.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/13",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/13",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/13 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/13 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/13 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/13"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1820
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 149,
+            "lines_deleted": 7,
+            "size_delta": 6723,
+            "size": 16684
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8973,
+            "size": 26649
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 802
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 1515
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 253,
+            "size": 253
+          }
+        }
+      },
+      "c4ba2b0fbfe49a64c92d1e1629b2fba0bee709ed": {
+        "kind": "REWORK",
+        "_number": 14,
+        "created": "2020-04-23 11:41:55.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/14",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/14",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/14 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/14 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/14 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/14"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1820
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 149,
+            "lines_deleted": 7,
+            "size_delta": 6723,
+            "size": 16684
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8973,
+            "size": 26649
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 802
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 1515
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "237e2e4e3f60b97bd872da1a31c0574b77eed3c8": {
+        "kind": "REWORK",
+        "_number": 15,
+        "created": "2020-04-28 10:26:54.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/15",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/15",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/15 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/15 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/15 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/15"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1820
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 16631
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8973,
+            "size": 26649
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 802
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 1515
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "a2c09f99ca0c67ced262007d37a1ba2151c77589": {
+        "kind": "REWORK",
+        "_number": 16,
+        "created": "2020-05-06 10:26:14.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/16",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/16",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/16 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/16 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/16 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/16"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1736
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 16631
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8928,
+            "size": 26619
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 820
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 1505
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "d1bc97b4f19d342a1d8d340694d38e4738878acd": {
+        "kind": "REWORK",
+        "_number": 17,
+        "created": "2020-05-08 06:59:07.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/17",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/17",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/17 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/17 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/17 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/17"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1736
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 16631
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8949,
+            "size": 26640
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 820
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 1505
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "3d135afedcbf068cb27bad42f654b9ed6c8d8f3c": {
+        "kind": "REWORK",
+        "_number": 18,
+        "created": "2020-05-19 08:18:29.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/18",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/18",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/18 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/18 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/18 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/18"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1736
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 16631
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8949,
+            "size": 26640
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 751
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 32,
+            "size_delta": 1304,
+            "size": 5686
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 2699
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "baf6308bffe087ff2ae1231fbae5a3a69b9a268d": {
+        "kind": "REWORK",
+        "_number": 19,
+        "created": "2020-05-20 09:38:07.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/19",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/19",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/19 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/19 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/19 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/19"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1736
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 16631
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8949,
+            "size": 26640
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 751
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 24,
+            "size_delta": 945,
+            "size": 5327
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 2699
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "d88f07472b444c05d101a3417c415a54c20803e2": {
+        "kind": "REWORK",
+        "_number": 20,
+        "created": "2020-09-23 12:13:45.000000000",
+        "uploader": {
+          "_account_id": 31418,
+          "name": "Mahendra Kamble",
+          "email": "mahendra.kamble358@gmail.com",
+          "username": "MahendraKamble"
+        },
+        "ref": "refs/changes/28/693328/20",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/20",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/20 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/20 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/20 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/20"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1640
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 16631
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8949,
+            "size": 26640
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 751
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 24,
+            "size_delta": 945,
+            "size": 5327
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 2585
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "9a850ab373668b40173ec60a08b704f70810aa4d": {
+        "kind": "NO_CHANGE",
+        "_number": 21,
+        "created": "2020-12-10 14:54:25.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/21",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/21",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/21 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/21 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/21 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/21"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1640
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 16631
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8949,
+            "size": 26640
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 751
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 24,
+            "size_delta": 945,
+            "size": 5327
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 2585
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "27c8d246b7a6a4b6ccece9df9a7ab2153f0fca69": {
+        "kind": "REWORK",
+        "_number": 22,
+        "created": "2020-12-14 07:40:54.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/22",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/22",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/22 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/22 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/22 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/22"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1640
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 17399
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8949,
+            "size": 31878
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 2,
+            "lines_deleted": 1,
+            "size_delta": 25,
+            "size": 588
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 24,
+            "size_delta": 945,
+            "size": 5327
+          },
+          "lower-constraints.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 18,
+            "size": 2618
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "82f180edb3b9d05254dc931ab543e05957363c98": {
+        "kind": "REWORK",
+        "_number": 23,
+        "created": "2020-12-18 07:52:33.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/23",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/23",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/23 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/23 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/23 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/23"
+            }
+          }
+        },
+        "files": {
+          "requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "size_delta": 24,
+            "size": 1640
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 146,
+            "lines_deleted": 7,
+            "size_delta": 6670,
+            "size": 17399
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 188,
+            "size_delta": 8949,
+            "size": 31878
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 2,
+            "lines_deleted": 1,
+            "size_delta": 25,
+            "size": 588
+          },
+          "ironic/drivers/modules/drac/common.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 24,
+            "size_delta": 945,
+            "size": 5327
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          }
+        }
+      },
+      "e81ed402d91d719fbfc29df9bb9dce0f4305c4f7": {
+        "kind": "REWORK",
+        "_number": 24,
+        "created": "2021-01-14 06:51:16.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/24",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/24",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/24 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/24 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/24 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/24"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 65,
+            "lines_deleted": 7,
+            "size_delta": 2836,
+            "size": 13565
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 161,
+            "size_delta": 7452,
+            "size": 30381
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "lines_deleted": 1,
+            "size_delta": 1,
+            "size": 564
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 85,
+            "size_delta": 4354,
+            "size": 14177
+          }
+        }
+      },
+      "64fb3f5394409122cd56638a5f1c8e8325f0abc2": {
+        "kind": "REWORK",
+        "_number": 25,
+        "created": "2021-02-26 09:41:42.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/25",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/25",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/25 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/25 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/25 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/25"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 65,
+            "lines_deleted": 7,
+            "size_delta": 2836,
+            "size": 13565
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 161,
+            "size_delta": 7452,
+            "size": 30381
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 1,
+            "size_delta": -41,
+            "size": 522
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 86,
+            "size_delta": 4406,
+            "size": 14229
+          }
+        }
+      },
+      "a836fa5b274b9bc09e02e3c9dabe9f9cc90f5b92": {
+        "kind": "TRIVIAL_REBASE",
+        "_number": 26,
+        "created": "2021-02-26 09:49:42.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/26",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/26",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/26 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/26 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/26 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/26"
+            }
+          }
+        },
+        "files": {
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 65,
+            "lines_deleted": 7,
+            "size_delta": 2836,
+            "size": 13565
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 161,
+            "size_delta": 7452,
+            "size": 30381
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 1,
+            "size_delta": -41,
+            "size": 522
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 86,
+            "size_delta": 4406,
+            "size": 14229
+          }
+        }
+      },
+      "fb6ef7f735f68a7a9dc7dbea4e3fd206cf77bfaa": {
+        "kind": "REWORK",
+        "_number": 27,
+        "created": "2021-03-04 14:00:15.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/27",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/27",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/27 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/27 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/27 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/27"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 86,
+            "lines_deleted": 4,
+            "size_delta": 4363,
+            "size": 14118
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 89,
+            "lines_deleted": 7,
+            "size_delta": 4278,
+            "size": 15007
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 124,
+            "size_delta": 5788,
+            "size": 28717
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 1,
+            "size_delta": -41,
+            "size": 522
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 56,
+            "size_delta": 2697,
+            "size": 12520
+          }
+        }
+      },
+      "5d86108de260ddb750055a266d2a69f5719c64ee": {
+        "kind": "TRIVIAL_REBASE",
+        "_number": 28,
+        "created": "2021-03-05 05:47:47.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/28",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/28",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/28 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/28 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/28 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/28"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 86,
+            "lines_deleted": 4,
+            "size_delta": 4363,
+            "size": 14118
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 89,
+            "lines_deleted": 7,
+            "size_delta": 4278,
+            "size": 15007
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 124,
+            "size_delta": 5788,
+            "size": 28717
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 1,
+            "size_delta": -41,
+            "size": 522
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 56,
+            "size_delta": 2697,
+            "size": 12520
+          }
+        }
+      },
+      "12f193a715b2e7c011c235b2bdac321d30193393": {
+        "kind": "REWORK",
+        "_number": 29,
+        "created": "2021-03-05 11:23:11.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/29",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/29",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/29 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/29 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/29 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/29"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 86,
+            "lines_deleted": 4,
+            "size_delta": 4363,
+            "size": 14118
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 89,
+            "lines_deleted": 7,
+            "size_delta": 4278,
+            "size": 15007
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 124,
+            "size_delta": 5788,
+            "size": 28717
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "lines_deleted": 1,
+            "size_delta": 1,
+            "size": 564
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 56,
+            "size_delta": 2697,
+            "size": 12520
+          }
+        }
+      },
+      "1dd0e276d16077e511f57fc04b6a40204ac90d21": {
+        "kind": "REWORK",
+        "_number": 30,
+        "created": "2021-03-08 09:04:22.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/30",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/30",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/30 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/30 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/30 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/30"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 82,
+            "lines_deleted": 3,
+            "size_delta": 4124,
+            "size": 13879
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 89,
+            "lines_deleted": 7,
+            "size_delta": 4278,
+            "size": 15007
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 124,
+            "size_delta": 5788,
+            "size": 28717
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "lines_deleted": 1,
+            "size_delta": 1,
+            "size": 564
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 400,
+            "size": 400
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 49,
+            "size_delta": 2273,
+            "size": 12096
+          }
+        }
+      },
+      "fba2bb0a07d1560d9170976e830a72d5ab90fbd1": {
+        "kind": "REWORK",
+        "_number": 31,
+        "created": "2021-03-17 09:56:02.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/31",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/31",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/31 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/31 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/31 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/31"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 82,
+            "lines_deleted": 3,
+            "size_delta": 4126,
+            "size": 13881
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 89,
+            "lines_deleted": 7,
+            "size_delta": 4292,
+            "size": 15082
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 124,
+            "size_delta": 5788,
+            "size": 31036
+          },
+          "test-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "lines_deleted": 1,
+            "size_delta": 1,
+            "size": 564
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 402,
+            "size": 402
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 48,
+            "size_delta": 2298,
+            "size": 12121
+          }
+        }
+      },
+      "a004fae33fd5cd2560c63b57b30af854ba5aed22": {
+        "kind": "REWORK",
+        "_number": 32,
+        "created": "2021-03-19 07:34:41.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/32",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/32",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/32 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/32 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/32 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/32"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 101,
+            "lines_deleted": 3,
+            "size_delta": 5052,
+            "size": 14807
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 124,
+            "lines_deleted": 7,
+            "size_delta": 5920,
+            "size": 16710
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 133,
+            "size_delta": 6264,
+            "size": 31512
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 402,
+            "size": 402
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 38,
+            "size_delta": 1691,
+            "size": 11514
+          }
+        }
+      },
+      "ece1f2bf09da8fcef39f1662aa4e42b5abfa4dae": {
+        "kind": "REWORK",
+        "_number": 33,
+        "created": "2021-03-22 11:35:08.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/33",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/33",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/33 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/33 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/33 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/33"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 105,
+            "lines_deleted": 3,
+            "size_delta": 5272,
+            "size": 15027
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 122,
+            "lines_deleted": 7,
+            "size_delta": 5893,
+            "size": 16683
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 133,
+            "size_delta": 6264,
+            "size": 31512
+          },
+          "driver-requirements.txt": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 1,
+            "lines_deleted": 1,
+            "size_delta": 8,
+            "size": 684
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 10,
+            "size_delta": 402,
+            "size": 402
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 37,
+            "size_delta": 1665,
+            "size": 11488
+          }
+        }
+      },
+      "32ce23945e8cf59c699d74cffae4c8f4a1e0030c": {
+        "kind": "REWORK",
+        "_number": 34,
+        "created": "2021-03-24 13:19:55.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/34",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/34",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/34 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/34 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/34 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/34"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 105,
+            "lines_deleted": 3,
+            "size_delta": 5272,
+            "size": 15027
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 126,
+            "lines_deleted": 7,
+            "size_delta": 5881,
+            "size": 16671
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 178,
+            "size_delta": 8836,
+            "size": 34084
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 260,
+            "size": 260
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 37,
+            "size_delta": 1665,
+            "size": 10984
+          }
+        }
+      },
+      "6067b88b70d2d3a9051c0f235c14669e46d11981": {
+        "kind": "REWORK",
+        "_number": 35,
+        "created": "2021-03-25 10:08:59.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/35",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/35",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/35 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/35 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/35 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/35"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 105,
+            "lines_deleted": 3,
+            "size_delta": 5272,
+            "size": 15747
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 120,
+            "lines_deleted": 7,
+            "size_delta": 5626,
+            "size": 16416
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 165,
+            "size_delta": 8130,
+            "size": 33378
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 259,
+            "size": 259
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 37,
+            "size_delta": 1665,
+            "size": 10984
+          }
+        }
+      },
+      "d31493fae5bb27f713c454f640997d5118212d17": {
+        "kind": "REWORK",
+        "_number": 36,
+        "created": "2021-03-25 14:43:09.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/36",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/36",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/36 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/36 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/36 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/36"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 105,
+            "lines_deleted": 3,
+            "size_delta": 5272,
+            "size": 15747
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 123,
+            "lines_deleted": 7,
+            "size_delta": 5760,
+            "size": 16550
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 165,
+            "size_delta": 8115,
+            "size": 33363
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 259,
+            "size": 259
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 37,
+            "size_delta": 1665,
+            "size": 10984
+          }
+        }
+      },
+      "7d82d7f3dd12d5b2227cd2dd7ee886d5f689fdad": {
+        "kind": "REWORK",
+        "_number": 37,
+        "created": "2021-03-26 08:35:54.000000000",
+        "uploader": {
+          "_account_id": 25726,
+          "name": "sonali bhausaheb borkar",
+          "email": "sonaliborkar85@gmail.com",
+          "username": "sonaliborkar85"
+        },
+        "ref": "refs/changes/28/693328/37",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/ironic",
+            "ref": "refs/changes/28/693328/37",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/37 && git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/37 && git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/ironic refs/changes/28/693328/37 && git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/ironic refs/changes/28/693328/37"
+            }
+          }
+        },
+        "files": {
+          "ironic/tests/unit/drivers/modules/redfish/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 105,
+            "size_delta": 5275,
+            "size": 15750
+          },
+          "ironic/drivers/modules/drac/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 123,
+            "lines_deleted": 7,
+            "size_delta": 5760,
+            "size": 16550
+          },
+          "ironic/tests/unit/drivers/modules/drac/test_inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 162,
+            "size_delta": 7992,
+            "size": 33240
+          },
+          "releasenotes/notes/add-pxe-nic-support-in-redfish-5359897135df1348.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 7,
+            "size_delta": 259,
+            "size": 259
+          },
+          "ironic/drivers/modules/redfish/inspect.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_inserted": 36,
+            "size_delta": 1664,
+            "size": 10983
+          }
+        }
+      }
+    },
+    "requirements": [],
+    "submit_records": [
+      {
+        "status": "CLOSED",
+        "labels": [
+          {
+            "label": "Verified",
+            "status": "OK",
+            "applied_by": {
+              "_account_id": 22348,
+              "name": "Zuul",
+              "username": "zuul",
+              "tags": ["SERVICE_USER"]
+            }
+          },
+          {
+            "label": "Code-Review",
+            "status": "OK",
+            "applied_by": {
+              "_account_id": 23851,
+              "name": "Riccardo Pittau",
+              "email": "elfosardo@gmail.com",
+              "username": "elfosardo"
+            }
+          },
+          {
+            "label": "Workflow",
+            "status": "OK",
+            "applied_by": {
+              "_account_id": 23851,
+              "name": "Riccardo Pittau",
+              "email": "elfosardo@gmail.com",
+              "username": "elfosardo"
+            }
+          },
+          { "label": "Backport-Candidate", "status": "MAY" }
+        ]
+      }
+    ]
+  }
+]

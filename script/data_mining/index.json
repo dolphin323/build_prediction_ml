@@ -1,0 +1,237 @@
+[
+  {
+    "id": "openstack%2Fcinder~master~I0ab07708843fcbb64bf932667e9b79aab259f698",
+    "project": "openstack/cinder",
+    "branch": "master",
+    "topic": "remove-tsm",
+    "hashtags": [],
+    "change_id": "I0ab07708843fcbb64bf932667e9b79aab259f698",
+    "subject": "Delete TSM Backup driver",
+    "status": "MERGED",
+    "created": "2020-10-16 14:04:03.000000000",
+    "updated": "2020-11-04 21:25:50.000000000",
+    "submitted": "2020-11-04 21:23:42.000000000",
+    "submitter": {
+      "_account_id": 22348,
+      "name": "Zuul",
+      "username": "zuul",
+      "tags": ["SERVICE_USER"]
+    },
+    "insertions": 4,
+    "deletions": 909,
+    "total_comment_count": 2,
+    "unresolved_comment_count": 0,
+    "has_review_started": true,
+    "submission_id": "758569-1604525022661-bdd4afc4",
+    "meta_rev_id": "834dfcba83d5d92712c0e5eb4dc424ca386bcbbf",
+    "_number": 758569,
+    "owner": {
+      "_account_id": 1736,
+      "name": "Ivan Kolodyazhny",
+      "email": "e0ne@e0ne.info",
+      "username": "e0ne"
+    },
+    "current_revision": "cddcc6e5073ec891b4d7aa4191fab56a05c74089",
+    "revisions": {
+      "d022fe031de6040c74a5433853db5601a6197c57": {
+        "kind": "REWORK",
+        "_number": 1,
+        "created": "2020-10-16 14:04:03.000000000",
+        "uploader": {
+          "_account_id": 1736,
+          "name": "Ivan Kolodyazhny",
+          "email": "e0ne@e0ne.info",
+          "username": "e0ne"
+        },
+        "ref": "refs/changes/69/758569/1",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/cinder",
+            "ref": "refs/changes/69/758569/1",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/1 \u0026\u0026 git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/1 \u0026\u0026 git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/1 \u0026\u0026 git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/cinder refs/changes/69/758569/1"
+            }
+          }
+        },
+        "files": {
+          "cinder/opts.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 2,
+            "size_delta": -119,
+            "size": 20747
+          },
+          "cinder/tests/unit/backup/drivers/test_backup_tsm.py": {
+            "status": "D",
+            "old_mode": 33188,
+            "lines_deleted": 354,
+            "size_delta": -13052,
+            "size": 0
+          },
+          "releasenotes/notes/delete-tsm-backup-driver-725e33f7c213fd50.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 4,
+            "size_delta": 98,
+            "size": 98
+          },
+          "cinder/backup/drivers/tsm.py": {
+            "status": "D",
+            "old_mode": 33188,
+            "lines_deleted": 515,
+            "size_delta": -19966,
+            "size": 0
+          }
+        }
+      },
+      "f7ed0261dcbffe9d9d502e4d47a1e6ec9d0a90d5": {
+        "kind": "REWORK",
+        "_number": 2,
+        "created": "2020-10-18 17:25:52.000000000",
+        "uploader": {
+          "_account_id": 1736,
+          "name": "Ivan Kolodyazhny",
+          "email": "e0ne@e0ne.info",
+          "username": "e0ne"
+        },
+        "ref": "refs/changes/69/758569/2",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/cinder",
+            "ref": "refs/changes/69/758569/2",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/2 \u0026\u0026 git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/2 \u0026\u0026 git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/2 \u0026\u0026 git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/cinder refs/changes/69/758569/2"
+            }
+          }
+        },
+        "files": {
+          "cinder/opts.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 2,
+            "size_delta": -119,
+            "size": 20747
+          },
+          "doc/source/configuration/block-storage/backup/tsm-backup-driver.rst": {
+            "status": "D",
+            "old_mode": 33188,
+            "lines_deleted": 34,
+            "size_delta": -1010,
+            "size": 0
+          },
+          "cinder/tests/unit/backup/drivers/test_backup_tsm.py": {
+            "status": "D",
+            "old_mode": 33188,
+            "lines_deleted": 354,
+            "size_delta": -13052,
+            "size": 0
+          },
+          "releasenotes/notes/delete-tsm-backup-driver-725e33f7c213fd50.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 4,
+            "size_delta": 98,
+            "size": 98
+          },
+          "cinder/backup/drivers/tsm.py": {
+            "status": "D",
+            "old_mode": 33188,
+            "lines_deleted": 515,
+            "size_delta": -19966,
+            "size": 0
+          },
+          "doc/source/configuration/block-storage/backup-drivers.rst": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 1,
+            "size_delta": -32,
+            "size": 653
+          }
+        }
+      },
+      "cddcc6e5073ec891b4d7aa4191fab56a05c74089": {
+        "kind": "REWORK",
+        "_number": 3,
+        "created": "2020-11-03 16:53:58.000000000",
+        "uploader": {
+          "_account_id": 1736,
+          "name": "Ivan Kolodyazhny",
+          "email": "e0ne@e0ne.info",
+          "username": "e0ne"
+        },
+        "ref": "refs/changes/69/758569/3",
+        "fetch": {
+          "anonymous http": {
+            "url": "https://review.opendev.org/openstack/cinder",
+            "ref": "refs/changes/69/758569/3",
+            "commands": {
+              "Checkout": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/3 \u0026\u0026 git checkout FETCH_HEAD",
+              "Cherry Pick": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/3 \u0026\u0026 git cherry-pick FETCH_HEAD",
+              "Format Patch": "git fetch https://review.opendev.org/openstack/cinder refs/changes/69/758569/3 \u0026\u0026 git format-patch -1 --stdout FETCH_HEAD",
+              "Pull": "git pull https://review.opendev.org/openstack/cinder refs/changes/69/758569/3"
+            }
+          }
+        },
+        "files": {
+          "cinder/opts.py": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 2,
+            "size_delta": -119,
+            "size": 20747
+          },
+          "etc/cinder/rootwrap.d/volume.filters": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 3,
+            "size_delta": -70,
+            "size": 6133
+          },
+          "doc/source/configuration/block-storage/backup/tsm-backup-driver.rst": {
+            "status": "D",
+            "old_mode": 33188,
+            "lines_deleted": 34,
+            "size_delta": -1010,
+            "size": 0
+          },
+          "cinder/tests/unit/backup/drivers/test_backup_tsm.py": {
+            "status": "D",
+            "old_mode": 33188,
+            "lines_deleted": 354,
+            "size_delta": -13052,
+            "size": 0
+          },
+          "releasenotes/notes/delete-tsm-backup-driver-725e33f7c213fd50.yaml": {
+            "status": "A",
+            "new_mode": 33188,
+            "lines_inserted": 4,
+            "size_delta": 98,
+            "size": 98
+          },
+          "cinder/backup/drivers/tsm.py": {
+            "status": "D",
+            "old_mode": 33188,
+            "lines_deleted": 515,
+            "size_delta": -19966,
+            "size": 0
+          },
+          "doc/source/configuration/block-storage/backup-drivers.rst": {
+            "old_mode": 33188,
+            "new_mode": 33188,
+            "lines_deleted": 1,
+            "size_delta": -32,
+            "size": 653
+          }
+        }
+      }
+    },
+    "requirements": [],
+    "submit_records": []
+  }
+]
